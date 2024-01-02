@@ -47,4 +47,23 @@ const checkwinner = () =>{
 const showWinner = () =>{
     msg.innerText = `Congratulations, You Win`;
     msgContainer.classList.remove("hide");
+    disableBoxes();
 }
+const disableBoxes = () =>{
+    for (let box of boxes) {
+        box.disabled = true;
+    }
+}
+const enableBoxes = () =>{
+    for (let box of boxes) {
+        box.disabled = false;
+        box.innerHTML = '';
+    }
+}
+const resetGame = () =>{
+    turnX=true;
+    enableBoxes();
+    msgContainer.classList.add("hide");
+}
+newGameBtn.addEventListener("click", resetGame);
+resetBtn.addEventListener("click", resetGame);

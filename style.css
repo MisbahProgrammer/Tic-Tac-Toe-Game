@@ -54,7 +54,13 @@
     margin-top: 10px;
 }
 .msg-box{
-    height: 40vh;
+    height:100vh;
+    text-align: center;
+    background-color: darkslategrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .msg{
     font-size: 3vw;
