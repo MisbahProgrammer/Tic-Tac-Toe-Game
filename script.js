@@ -20,10 +20,12 @@ boxes.forEach((box) => {
         if (turnX){
             box.innerText = 'X';
             turnX = false
+            box.style.color = "black";
         }
         else{
             box.innerText = 'O';
             turnX = true
+            box.style.color = "red";
         }
         box.disabled = true
         checkwinner();
@@ -44,6 +46,7 @@ const checkwinner = () =>{
             }
     }
 }
+
 const showWinner = () =>{
     msg.innerText = `Congratulations, You Win`;
     msgContainer.classList.remove("hide");
