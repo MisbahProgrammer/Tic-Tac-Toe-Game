@@ -1,0 +1,1 @@
+I built a Tic-Tac-Toe game using Html,Css and JavaScript.I use Simple html  to make a structure for game and use simple css to look like better and then i write JavaScript.In Javascript i use variable, arrays,object,function and loop to make this gam.This game help me in understanding the basics of javascript.
